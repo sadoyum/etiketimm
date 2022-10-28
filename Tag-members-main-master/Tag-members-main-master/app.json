@@ -1,0 +1,45 @@
+{
+  "name": "New Mention Bot",
+  "description": "Python ile yapılan basit bir üye etiketleme botu [Telethon].",
+  "logo": "https://i.ibb.co/Qkz78hx/images-1.jpg",
+  "keywords": [
+    "telegram",
+    "MentionBot",
+    "plugins",
+    "telegram-Mention",
+  ],
+  "repository": "https://github.com/Mahoaga06/Tag-members",
+  "website": "https://github.com/Mahoaga06/Tag-members", 
+  "success_url": "t.me/TaliaSupport",
+  "env": {
+    "ENV": {
+      "description": "Bunu HERHANGİ BİR ŞEY, olarak ayarlamak heroku'yu etkinleştirir.",
+      "value": "ANYTHING"
+    },
+    "TOKEN": {
+      "description": "Bot Jetonunuz.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Bu değeri my.telegram.org'dan alın! Lütfen çalmayın",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Bu değeri my.telegram.org'dan alın! Lütfen çalmayın",
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
